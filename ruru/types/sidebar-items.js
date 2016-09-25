@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["ValueType",""],["c_void",""]],"struct":[["Value",""]],"type":[["Argc",""],["Callback",""],["CallbackMutPtr",""],["CallbackPtr",""],["Id",""],["InternalValue",""],["SignedValue",""],["c_char",""],["c_int",""],["c_long",""]]});

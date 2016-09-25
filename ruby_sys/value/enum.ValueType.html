@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ValueType` enum in crate `ruby_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ValueType">
+
+    <title>ruby_sys::value::ValueType - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>ruby_sys</a>::<wbr><a href='index.html'>value</a></p><script>window.sidebarCurrent = {name: 'ValueType', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>ruby_sys</a>::<wbr><a href='index.html'>value</a>::<wbr><a class='enum' href=''>ValueType</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-275' class='srclink' href='../../src/ruby_sys/value.rs.html#48-75' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum ValueType {
+    None,
+    Object,
+    Class,
+    Module,
+    Float,
+    RString,
+    Regexp,
+    Array,
+    Hash,
+    Struct,
+    Bignum,
+    File,
+    Data,
+    Match,
+    Complex,
+    Rational,
+    Nil,
+    True,
+    False,
+    Symbol,
+    Fixnum,
+    Undef,
+    Node,
+    IClass,
+    Zombie,
+    Mask,
+}</pre><h2 class='variants'>Variants</h2>
+<span id='variant.None' class='variant'><code>None</code></span><span id='variant.Object' class='variant'><code>Object</code></span><span id='variant.Class' class='variant'><code>Class</code></span><span id='variant.Module' class='variant'><code>Module</code></span><span id='variant.Float' class='variant'><code>Float</code></span><span id='variant.RString' class='variant'><code>RString</code></span><span id='variant.Regexp' class='variant'><code>Regexp</code></span><span id='variant.Array' class='variant'><code>Array</code></span><span id='variant.Hash' class='variant'><code>Hash</code></span><span id='variant.Struct' class='variant'><code>Struct</code></span><span id='variant.Bignum' class='variant'><code>Bignum</code></span><span id='variant.File' class='variant'><code>File</code></span><span id='variant.Data' class='variant'><code>Data</code></span><span id='variant.Match' class='variant'><code>Match</code></span><span id='variant.Complex' class='variant'><code>Complex</code></span><span id='variant.Rational' class='variant'><code>Rational</code></span><span id='variant.Nil' class='variant'><code>Nil</code></span><span id='variant.True' class='variant'><code>True</code></span><span id='variant.False' class='variant'><code>False</code></span><span id='variant.Symbol' class='variant'><code>Symbol</code></span><span id='variant.Fixnum' class='variant'><code>Fixnum</code></span><span id='variant.Undef' class='variant'><code>Undef</code></span><span id='variant.Node' class='variant'><code>Node</code></span><span id='variant.IClass' class='variant'><code>IClass</code></span><span id='variant.Zombie' class='variant'><code>Zombie</code></span><span id='variant.Mask' class='variant'><code>Mask</code></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../ruby_sys/value/enum.ValueType.html' title='ruby_sys::value::ValueType'>ValueType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-239' class='srclink' href='../../src/ruby_sys/value.rs.html#45' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../ruby_sys/value/enum.ValueType.html' title='ruby_sys::value::ValueType'>ValueType</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../ruby_sys/value/enum.ValueType.html' title='ruby_sys::value::ValueType'>ValueType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-245' class='srclink' href='../../src/ruby_sys/value.rs.html#45' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "ruby_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
